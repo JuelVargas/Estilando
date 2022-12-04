@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>overlord cards</title>
+
+</head>
+
+
+
+
+<body>
+
+    <div class="box" onclick="audioAinz.play()">
+        
+        <div class="card">
+            <div class="img">
+                <img src="src/Ainz_Ooal_Gown.webp" alt="imagen del supremo">
+            </div>
+            
+        </div>
+
+        
+
+    </div> 
+
+    <div class="box" onclick="audioAlbedo.play()">
+        
+        <div class="card">
+            <div class="img">
+                <img src="src/Albedo.webp" alt="imagen supervisora">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="box" onclick="audioDemiurge.play()">
+        
+        <div class="card">
+            <div class="img">
+                <img src="src/Demiurge.webp" alt="imagen supervisora">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="box" onclick="audioShalltear.play()">
+        
+        <div class="card">
+            <div class="img">
+                <img src="src/Shalltear.webp" alt="imagen supervisora">
+            </div>
+            
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    const audioAinz = new Audio();
+    audioAinz.src = 'src/momonga.mp3';
+
+    const audioShalltear = new Audio();
+    audioShalltear.src =  'src/shalltear.mp3';
+
+    const audioDemiurge =  new Audio();
+    audioDemiurge.src =  'src/demiurge.mp3'
+
+    const audioAlbedo = new Audio();
+    audioAlbedo.src = 'src/albedo.mp3'
+
+</script>
+
+</html>
