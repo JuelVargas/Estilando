@@ -1,0 +1,63 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #213333
+}
+.card
+{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e4dc6c;
+    box-shadow: 0 0 3px #fcf6ba;
+
+}
+.card span{
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 10px ;
+    margin: 5px;
+    background: #444;
+
+}
+
+.card::before
+{
+    content: '';
+    width: 400%;
+    height: 400%;
+    background: linear-gradient(to right,transparent,transparent, #ffffff, transparent,transparent );
+    opacity: 0.7;
+
+    animation: animate 10s linear infinite;
+    
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
